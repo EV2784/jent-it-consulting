@@ -1,0 +1,363 @@
+/* Custom CSS for JentTech IT Solutions Website */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+}
+body, td, th {
+    color: #000000; 
+ 
+}
+.text-shadow {
+	text-shadow: 2px 2px 10px rgba(0,0,0,0.85);
+}
+.img-rounded-bg {
+	background-image: url(../img/networking-globe.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Custom Gradients for Sections */
+.bg-light-gradient {
+    background-position: 0%;
+    background-image: -webkit-linear-gradient(270deg,rgba(239,238,252,1.00) 0%,rgba(165,193,220,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(239,238,252,1.00) 0%,rgba(165,193,220,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(239,238,252,1.00) 0%,rgba(165,193,220,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(239,238,252,1.00) 0%,rgba(165,193,220,1.00) 100%);
+}
+
+
+.btn-white {
+	background-color: rgba(255,255,255,1.00);
+	border-radius: 10px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	color: rgba(0,0,0,1.00);
+	text-decoration: none;
+	border: thin solid rgba(0,0,0,0.00);
+	font-size: small;
+}
+
+.btn-white:hover {
+	border: thin solid rgba(0,0,0,0.65);
+	background-image: -webkit-linear-gradient(270deg,rgba(159,181,242,1.00) 0%,rgba(255,255,255,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(159,181,242,1.00) 0%,rgba(255,255,255,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(159,181,242,1.00) 0%,rgba(255,255,255,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(159,181,242,1.00) 0%,rgba(255,255,255,1.00) 100%);
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+  /* Ensures the container takes up a specific height for the items to grow into */
+  height: 300px; 
+}
+
+.service-items {
+  flex: 1; /* Makes each item grow to fill an equal amount of space */
+  /* Add styling for your row items here */
+  
+}
+
+.bg-white-gradient {
+    background: linear-gradient(180deg, #ffffff 0%, #f0f2f5 100%);
+}
+
+.bg-primary-subtle {
+    background-color: #e0f2f7 !important; /* Lighter shade of primary for contrast sections */
+}
+
+.bg-gradient-primary {
+    background-position: right; /* Stronger gradient for hero */
+    background-image: -webkit-linear-gradient(270deg,rgba(117,0,232,1.00) 0%,rgba(18,212,224,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(117,0,232,1.00) 0%,rgba(18,212,224,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(117,0,232,1.00) 0%,rgba(18,212,224,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(117,0,232,1.00) 0%,rgba(18,212,224,1.00) 100%);
+}
+
+
+/* Navbar Customizations */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem; /* Padding around logo text */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    margin-left: 15px;
+    padding: 8px 15px;
+    border-radius: 0.5rem; /* Rounded corners for nav links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15); /* Light hover background */
+    color: #fff;
+}
+
+.navbar .btn-primary {
+    background-color: #4b45fd; 
+    border-color: #4d7ee8;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #0d6ebe;
+    border-color: #80b9fe;
+    transform: translateY(-2px);
+}
+
+/* Hero Section Styling */
+.hero-section {
+    min-height: 80vh; /* Make hero section tall */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden; /* Hide overflow from animations */
+}
+
+/* Page Header Section for inner pages */
+.page-header-section {
+    min-height: 40vh; /* Shorter hero for inner pages */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background: #4d7ee8; /* Primary gradient */
+}
+.page-header-section h1 {
+    font-size: 3.5rem;
+}
+
+/* General Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #343a40;
+}
+
+.display-3, .display-4, .display-5, .display-6 {
+    font-weight: 800;
+}
+
+/* Button Styles */
+.btn-lg {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+    border-radius: 2rem; /* Consistent rounded pills */
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light, .btn-outline-primary, .btn-outline-success, .btn-outline-info {
+    border-width: 2px;
+    font-weight: 500;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-warning:hover, .btn-danger:hover {
+    transform: translateY(-3px); /* Subtle lift on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 1rem; /* More rounded cards */
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift cards on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.service-card .card-body i {
+    color: #007bff; /* Primary color for service icons */
+}
+
+/* Icon Animation for Service Cards */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.icon-bounce {
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Testimonial Carousel Styling */
+.testimonial-carousel {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.blockquote p.lead {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.blockquote-footer {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #212529 !important; /* Darker footer */
+}
+
+footer a {
+    color: #adb5bd; /* Lighter text for links */
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer .social-icons a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #007bff; /* Primary color on hover */
+}
+
+/* Social Icon Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.social-icons a.animate__animated {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* Forms */
+.form-control.rounded-pill, .form-select.rounded-pill {
+    border-radius: 50rem !important; /* More rounded input fields */
+}
+.form-control.rounded-4, .form-select.rounded-4 {
+    border-radius: 0.75rem !important;
+}
+
+/* Map Responsive */
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%; /* 16:9 aspect ratio */
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* Text Content blocks for policy pages */
+.text-content p, .text-content li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 992px) {
+    .navbar .nav-link {
+        margin-left: 0;
+        text-align: center;
+    }
+    .navbar .btn-primary {
+        display: block;
+        width: 80%;
+        margin: 15px auto;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p.lead {
+        font-size: 1.1rem;
+    }
+    .page-header-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 56px; /* Adjust for smaller fixed navbar */
+    }
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+    .hero-section {
+        min-height: 60vh;
+    }
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-section .btn-lg {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .page-header-section {
+        min-height: 30vh;
+    }
+    .page-header-section h1 {
+        font-size: 2rem;
+    }
+}
